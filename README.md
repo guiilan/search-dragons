@@ -16,9 +16,16 @@ Ultilizando Angular para toda construção do sitema.
 Para ter acesso ao painel admnistrativo é necessário está autenticado , para ser autenticado basta ir na pagina de acesso e realizar o login.
 LOGIN admin
 SENHA admin
+
 ## 📦 Uso
 
-Basta estar autenticado e registrar operações.
+Para rodar a aplicação rode o comando abaixo em sem terminal 
+
+  $ ng serve --port 9090 -o
+  
+ou qualquer outra porta de seu interesse.
+
+Para registar operações basta estar autenticado.
 Para sair da aplicação basta fazer o log out.
 
 ## 📌 Versão
