@@ -37,8 +37,8 @@
     
 
         <button  *ngIf="!delete" (click)="createDragon()" mat-raised-button color="primary">Save</button>
-        <button  *ngIf="delete" (click)="updateDragon()" mat-raised-button color="accent">Update</button>
-        <button class="margin-left-main" *ngIf="delete" (click)="deleteDragon()" mat-raised-button color="warn">Delete</button>
-        <button class="margin-left-main" *ngIf="delete" (click)="cancel()" mat-raised-button >Cancel</button>
+        <button class="margin-right-btn" *ngIf="delete" (click)="updateDragon()" mat-raised-button color="accent">Update</button>
+        <button class="margin-right-btn" *ngIf="delete" (click)="deleteDragon()" mat-raised-button color="warn">Delete</button>
+        <button class="margin-top-btn" *ngIf="delete" (click)="cancel()" mat-raised-button >Cancel</button>
     </div>
 </div>
