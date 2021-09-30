@@ -1,0 +1,16 @@
+<a *ngIf="dragonsList" class="container-dragons" >
+    <div  class="container-grid">
+        <a *ngFor="let dragons of dragonsList" class="card-container">
+            <div href="#modal1" (click)="detalhes(dragons)" class="container-informate">
+                <h4>{{ dragons.name }}</h4>
+                <p>
+                    Origen : {{ dragons.type }} <br />
+                    Data de Criação : {{ dragons.createdAt | date: "dd/MM/yyyy" }}<br />
+                    Histórias : {{ dragons.histories }}
+                  </p>
+            </div>
+            <img *ngIf="dragons.avatar" src={{dragons.avatar}}>
+            <img *ngIf="!dragons.avatar" src='../../assets/default-img.png'>
+        </a>
+    </div>
+</a>

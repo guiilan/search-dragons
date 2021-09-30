@@ -1,0 +1,36 @@
+<div class="form-container">
+    <div class="form">
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="dragon.name" id="loginUser" type="text" class="validate">
+                <label class="active" for="loginUser">Name</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="dragon.type" id="loginUser" type="text" class="validate">
+                <label class="active" for="loginUser">Type</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="dragon.histories"  id="loginUser" type="text" class="validate">
+                <label class="active" for="loginUser">Histories</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="dragon.avatar" id="loginUser" type="text" class="validate">
+                <label class="active" for="loginUser">Link Avatar</label>
+            </div>
+        </div>
+    
+
+        <button  *ngIf="!delete" (click)="createDragon()" mat-raised-button color="primary">Save</button>
+        <button  *ngIf="delete" (click)="updateDragon()" mat-raised-button color="accent">Update</button>
+        <button style="margin-left: 10px;" *ngIf="delete" (click)="deleteDragon()" mat-raised-button color="warn">Delete</button>
+    </div>
+</div>

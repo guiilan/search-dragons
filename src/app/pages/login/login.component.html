@@ -1,0 +1,19 @@
+<div class="form-container">
+    <div class="form">
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="user.login" id="loginUser" type="text" class="validate">
+                <label class="active" for="loginUser">Login</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="user.password" id="loginPsd" type="password" class="validate">
+                <label class="active" for="loginPsd">Senha</label>
+            </div>
+        </div>
+
+        <button (click)="login()" mat-raised-button color="primary">Login</button>
+    </div>
+</div>

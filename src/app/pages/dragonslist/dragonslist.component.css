@@ -1,0 +1,66 @@
+@media screen and (min-width: 320px){
+    .container-dragons{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+
+    .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        flex-direction: row;
+    }
+
+    .container-informate{
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    .card-container{
+        display: flex;
+        width: auto;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: #ee6e73;
+        align-items: center;
+        padding: 3rem;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+
+    .card-container:hover{
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    
+    .card-container img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .container-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1364px){
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
