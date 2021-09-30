@@ -31,6 +31,10 @@ export class RegisterdragonComponent implements OnInit {
     }
   }
 
+  cancel(){
+    this.router.navigate(['/dragons'])
+  }
+
   deleteDragon(){
     this.dragonService.deletedragon(parseInt(this.route.snapshot.paramMap.get('id'))).subscribe( res => {
       toast({html: 'Dragão Deletado', classes: 'rounded'});
