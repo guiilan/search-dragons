@@ -1,27 +1,31 @@
-# SearchDragons
+# Título do projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+Search Dragons
 
-## Development server
+## 🚀 Considerações
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Projeto Criado por Guilherme Ilan para Registro dos seus dragões favoritos :D
 
-## Code scaffolding
+## ⚙️ Ferramentas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ultilizado Materialize para estilização da interface 
+Ultilizando Angular para toda construção do sitema.
 
-## Build
+### ⌨️ Segurança
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para ter acesso ao painel admnistrativo é necessário está autenticado , para ser autenticado basta ir na pagina de acesso e realizar o login.
+LOGIN admin
+SENHA admin
+## 📦 Uso
 
-## Running unit tests
+Basta estar autenticado e registrar operações.
+Para sair da aplicação basta fazer o log out.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📌 Versão
+ V 1.0
+## ✒️ Autores
 
-## Running end-to-end tests
+ Guilherme Ilan - [desenvolvedor](https://github.com/guiilan)
+## 🎁 Expressões de gratidão
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Obrigado 🤓📢.
