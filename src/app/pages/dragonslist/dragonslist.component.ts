@@ -32,7 +32,6 @@ export class DragonslistComponent implements OnInit {
   obterDragons(){
     this.dragonService.getDragons().subscribe((res: any)  => {
        this.dragonsList = res
-       console.log(this.dragonsList)
        this.dragonsList.sort(function (a, b) {
         return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
       });

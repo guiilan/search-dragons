@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    console.log(this.user)
     if((this.user.login == this.user.password) && this.user.password == 'admin'){
       toast({html: 'Login', classes: 'rounded'});
       localStorage.setItem('Auth', 'true')
