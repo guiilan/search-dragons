@@ -8,7 +8,7 @@ Projeto Criado por Guilherme Ilan para Registro dos seus dragões favoritos :D
 
 ## ⚙️ Ferramentas
 
-Ultilizado Materialize para estilização da interface 
+Ultilizado Materialize e Angular Material para estilização da interface 
 Ultilizando Angular para toda construção do sitema.
 
 ### ⌨️ Segurança

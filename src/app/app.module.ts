@@ -10,7 +10,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { DragonslistComponent } from './pages/dragonslist/dragonslist.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterdragonComponent } from './pages/registerdragon/registerdragon.component';
-
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { RegisterdragonComponent } from './pages/registerdragon/registerdragon.c
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

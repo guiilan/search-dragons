@@ -1,12 +1,13 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo  right">Search Dragons</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a [routerLink]="['/dragons']">Dragons</a></li>
-      <li><a [routerLink]="['/registerdragons']">Register Dragon</a></li>
-      <li><a (click)="clearSection()">Log Out</a></li>
-    </ul>
-  </div>
-</nav>
-      
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu"><mat-icon>more_vert</mat-icon></button>
+  <button mat-button (click)="clearSection()"><mat-icon>exit_to_app</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/dragons']">Dragons</button>
+    <button mat-menu-item [routerLink]="['/registerdragons']">Register Dragon</button>
+  </mat-menu>
+  <span>Search Dragons</span>
+  <span class="example-spacer"></span>
+
+</mat-toolbar>
+
 <router-outlet></router-outlet>

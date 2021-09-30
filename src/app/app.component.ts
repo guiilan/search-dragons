@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import * as $ from 'jquery'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +13,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
+
   clearSection(){
     localStorage.clear()
     this.route.navigate([''])

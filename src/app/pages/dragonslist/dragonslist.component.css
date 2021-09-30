@@ -24,11 +24,12 @@
         width: auto;
         flex-direction: row-reverse;
         justify-content: space-between;
-        background-color: #ee6e73;
+        background-color: #3f51b5;
         align-items: center;
         padding: 3rem;
         border-radius: 18px;
         cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     .card-container:hover{
