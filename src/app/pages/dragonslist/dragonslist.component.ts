@@ -11,13 +11,15 @@ import { toast } from 'materialize-css';
 })
 export class DragonslistComponent implements OnInit {
   
-  dragonsList: Dragons
+  dragonsList: Dragons[]
   dragonsRegister: Dragons
 
   constructor(
     private dragonService: DragonsService,
     private route: Router
-    ) { }
+    ) {
+      this.dragonsList = [] 
+     }
 
   ngOnInit(): void {
     if(localStorage.getItem("Auth") != "true"){
@@ -28,7 +30,13 @@ export class DragonslistComponent implements OnInit {
   }
 
   obterDragons(){
-    this.dragonService.getDragons().subscribe(res => { this.dragonsList = res})
+    this.dragonService.getDragons().subscribe((res: any)  => {
+       this.dragonsList = res
+       console.log(this.dragonsList)
+       this.dragonsList.sort(function (a, b) {
+        return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);
+      });
+      })
   }
 
   detalhes(dragon: Dragons){
